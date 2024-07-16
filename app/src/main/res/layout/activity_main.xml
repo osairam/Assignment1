@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/mealDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter meal description"
+        android:layout_margin="16dp" />
+
+    <Spinner
+        android:id="@+id/mealTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mealDescriptionEditText"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/addMealButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Meal"
+        android:layout_below="@id/mealTypeSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/filterSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addMealButton"
+        android:layout_margin="16dp" />
+
+    <ListView
+        android:id="@+id/mealListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filterSpinner"
+        android:layout_margin="16dp" />
+</RelativeLayout>
